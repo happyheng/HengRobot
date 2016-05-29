@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
+            <connections>
+                <outlet property="baseScrollViewButtomConstraint" destination="bqc-7a-ahc" id="aM7-5I-fHG"/>
+                <outlet property="chatTableView" destination="rSj-dd-FZL" id="3bL-rO-I8V"/>
+                <outlet property="editTextField" destination="jbv-jg-RYW" id="BbN-x2-u3a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceButton" destination="CZF-G1-EJ2" id="Iui-t2-Szb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="or5-G0-N2p" userLabel="bottomView">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-jg-RYW" userLabel="editTextField">
+                            <rect key="frame" x="10" y="10" width="180" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" spellCheckingType="no"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-Cq-nVW" userLabel="sendButton">
+                            <rect key="frame" x="200" y="10" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Fy0-1l-ruG"/>
+                            </constraints>
+                            <state key="normal" title="发送"/>
+                            <connections>
+                                <action selector="sendButtonClicked:" destination="-1" eventType="touchUpInside" id="yiw-pi-bTk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZF-G1-EJ2" customClass="VoiceButton">
+                            <rect key="frame" x="255" y="-3" width="55" height="55"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="CZF-G1-EJ2" secondAttribute="height" multiplier="1:1" id="nzb-MX-3Hv"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="voiceButtonBack.png">
+                                <color key="titleColor" red="0.94463358200000003" green="1" blue="0.95337122929999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vg9-Cq-nVW" firstAttribute="centerY" secondItem="or5-G0-N2p" secondAttribute="centerY" id="4iL-Ng-3B6"/>
+                        <constraint firstItem="CZF-G1-EJ2" firstAttribute="centerY" secondItem="or5-G0-N2p" secondAttribute="centerY" id="A1s-7N-s5T"/>
+                        <constraint firstItem="jbv-jg-RYW" firstAttribute="leading" secondItem="or5-G0-N2p" secondAttribute="leading" constant="10" id="Fmj-RS-Esx"/>
+                        <constraint firstAttribute="height" constant="50" id="Glj-Xa-Q39"/>
+                        <constraint firstItem="vg9-Cq-nVW" firstAttribute="trailing" secondItem="or5-G0-N2p" secondAttribute="trailing" constant="-70" id="HHZ-8Y-0CA"/>
+                        <constraint firstItem="vg9-Cq-nVW" firstAttribute="leading" secondItem="jbv-jg-RYW" secondAttribute="trailing" constant="10" id="Nks-rv-GpW"/>
+                        <constraint firstItem="CZF-G1-EJ2" firstAttribute="leading" secondItem="vg9-Cq-nVW" secondAttribute="trailing" constant="5" id="SYn-Lb-Pr1"/>
+                        <constraint firstItem="jbv-jg-RYW" firstAttribute="centerY" secondItem="or5-G0-N2p" secondAttribute="centerY" id="W9L-YI-PlL"/>
+                        <constraint firstAttribute="trailing" secondItem="CZF-G1-EJ2" secondAttribute="trailing" constant="10" id="lzx-QV-nOc"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rSj-dd-FZL" userLabel="chatTableView">
+                    <rect key="frame" x="0.0" y="60" width="320" height="458"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9I-1y-HAD" userLabel="topTitleView">
+                    <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHf-pI-Las" userLabel="backButton">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="rUJ-RF-XuP"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="title_back"/>
+                            <connections>
+                                <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="8EE-wJ-icd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="AHf-pI-Las" firstAttribute="height" secondItem="f9I-1y-HAD" secondAttribute="height" id="6Qv-dc-Be9"/>
+                        <constraint firstItem="AHf-pI-Las" firstAttribute="top" secondItem="f9I-1y-HAD" secondAttribute="top" id="6ic-fz-JXS"/>
+                        <constraint firstItem="AHf-pI-Las" firstAttribute="leading" secondItem="f9I-1y-HAD" secondAttribute="leading" id="D4A-av-gQs"/>
+                        <constraint firstAttribute="height" constant="40" id="ved-rx-Uh1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rSj-dd-FZL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0qe-U6-SbB"/>
+                <constraint firstAttribute="trailing" secondItem="rSj-dd-FZL" secondAttribute="trailing" id="Fhg-rt-Kgy"/>
+                <constraint firstItem="f9I-1y-HAD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="RDj-r2-KQf"/>
+                <constraint firstItem="or5-G0-N2p" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="bqc-7a-ahc"/>
+                <constraint firstAttribute="trailing" secondItem="or5-G0-N2p" secondAttribute="trailing" id="el3-06-fb1"/>
+                <constraint firstItem="f9I-1y-HAD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="icE-Cc-h6d"/>
+                <constraint firstItem="rSj-dd-FZL" firstAttribute="bottom" secondItem="or5-G0-N2p" secondAttribute="top" id="mca-SV-Pgq"/>
+                <constraint firstItem="rSj-dd-FZL" firstAttribute="top" secondItem="f9I-1y-HAD" secondAttribute="bottom" id="ol9-FX-bPv"/>
+                <constraint firstAttribute="trailing" secondItem="f9I-1y-HAD" secondAttribute="trailing" id="sH5-iB-phK"/>
+                <constraint firstItem="or5-G0-N2p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uB2-mB-Cmo"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="236" y="236"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="title_back" width="73" height="73"/>
+        <image name="voiceButtonBack.png" width="256" height="256"/>
+    </resources>
+</document>

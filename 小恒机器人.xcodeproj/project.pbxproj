@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A0CAD31BC368AE00939F3A /* voiceButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A0CAD21BC368AE00939F3A /* voiceButtonBack.png */; settings = {ASSET_TAGS = (); }; };
+		02A486D91BC112010092616E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486AB1BC112010092616E /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		02A486DA1BC112010092616E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A486AC1BC112010092616E /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		02A486DB1BC112010092616E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A486AE1BC112010092616E /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		02A486DC1BC112010092616E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486B21BC112010092616E /* BaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		02A486DE1BC112010092616E /* BaseChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486BB1BC112010092616E /* BaseChatTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		02A486DF1BC112010092616E /* BaseCellDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486BE1BC112010092616E /* BaseCellDataType.m */; settings = {ASSET_TAGS = (); }; };
+		02A486E01BC112010092616E /* OtherChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486C01BC112010092616E /* OtherChatTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		02A486E11BC112010092616E /* OtherChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A486C11BC112010092616E /* OtherChatTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		02A486E21BC112010092616E /* OwnChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486C31BC112010092616E /* OwnChatTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		02A486E31BC112010092616E /* OwnChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A486C41BC112010092616E /* OwnChatTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		02A486E41BC112010092616E /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486C61BC112010092616E /* ChatViewController.m */; settings = {ASSET_TAGS = (); }; };
+		02A486E51BC112010092616E /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A486C71BC112010092616E /* ChatViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		02A486E61BC112010092616E /* ResizableImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486CA1BC112010092616E /* ResizableImageTool.m */; settings = {ASSET_TAGS = (); }; };
+		02A486E81BC112010092616E /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02A486CC1BC112010092616E /* icon.jpg */; settings = {ASSET_TAGS = (); }; };
+		02A486E91BC112010092616E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A486CD1BC112010092616E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		02A486EA1BC112010092616E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A486CE1BC112010092616E /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		02A486EB1BC112010092616E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486D11BC112010092616E /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		02A486EC1BC112010092616E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A486D21BC112010092616E /* LoginViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		02A486ED1BC112010092616E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486D31BC112010092616E /* main.m */; settings = {ASSET_TAGS = (); }; };
+		02A486EE1BC112010092616E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A486D61BC112010092616E /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		02A486EF1BC112010092616E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A486D71BC112010092616E /* RegisterViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		02A486F01BC112010092616E /* robotIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02A486D81BC112010092616E /* robotIcon.jpg */; settings = {ASSET_TAGS = (); }; };
+		02A486F41BC11F3F0092616E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486F31BC11F3F0092616E /* libz.tbd */; };
+		02A486F61BC11F460092616E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486F51BC11F460092616E /* AVFoundation.framework */; };
+		02A486F81BC11F4E0092616E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486F71BC11F4E0092616E /* SystemConfiguration.framework */; };
+		02A486FA1BC11F5B0092616E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486F91BC11F5B0092616E /* CoreTelephony.framework */; };
+		02A486FC1BC11F680092616E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486FB1BC11F680092616E /* AudioToolbox.framework */; };
+		02A486FE1BC11F700092616E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486FD1BC11F700092616E /* UIKit.framework */; };
+		02A487001BC11F7A0092616E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A486FF1BC11F7A0092616E /* CoreLocation.framework */; };
+		02A487021BC11F820092616E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A487011BC11F820092616E /* AddressBook.framework */; };
+		02A487041BC11F8B0092616E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A487031BC11F8B0092616E /* QuartzCore.framework */; };
+		02A487061BC11F960092616E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A487051BC11F960092616E /* CoreGraphics.framework */; };
+		02A487081BC11FBD0092616E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A487071BC11FBD0092616E /* Foundation.framework */; };
+		02A4870C1BC135150092616E /* VoiceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A4870B1BC135150092616E /* VoiceButton.m */; settings = {ASSET_TAGS = (); }; };
+		02A4870E1BC15C120092616E /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A4870D1BC15C120092616E /* libz.1.tbd */; };
+		02A487121BC15E290092616E /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A487111BC15E290092616E /* iflyMSC.framework */; settings = {ASSET_TAGS = (); }; };
+		02A4871A1BC1658C0092616E /* IATConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A487151BC1658C0092616E /* IATConfig.m */; settings = {ASSET_TAGS = (); }; };
+		02A4871C1BC1658C0092616E /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A487191BC1658C0092616E /* ISRDataHelper.m */; settings = {ASSET_TAGS = (); }; };
+		B314EDE6D7DFC280F48FF0F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 442E89FCE4DCDD1883142BEE /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02A0CAD21BC368AE00939F3A /* voiceButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voiceButtonBack.png; sourceTree = "<group>"; };
+		02A486AA1BC112010092616E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		02A486AB1BC112010092616E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		02A486AD1BC112010092616E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02A486AF1BC112010092616E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02A486B11BC112010092616E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		02A486B21BC112010092616E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		02A486BA1BC112010092616E /* BaseChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseChatTableViewCell.h; sourceTree = "<group>"; };
+		02A486BB1BC112010092616E /* BaseChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseChatTableViewCell.m; sourceTree = "<group>"; };
+		02A486BD1BC112010092616E /* BaseCellDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCellDataType.h; sourceTree = "<group>"; };
+		02A486BE1BC112010092616E /* BaseCellDataType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCellDataType.m; sourceTree = "<group>"; };
+		02A486BF1BC112010092616E /* OtherChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherChatTableViewCell.h; sourceTree = "<group>"; };
+		02A486C01BC112010092616E /* OtherChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherChatTableViewCell.m; sourceTree = "<group>"; };
+		02A486C11BC112010092616E /* OtherChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherChatTableViewCell.xib; sourceTree = "<group>"; };
+		02A486C21BC112010092616E /* OwnChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnChatTableViewCell.h; sourceTree = "<group>"; };
+		02A486C31BC112010092616E /* OwnChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnChatTableViewCell.m; sourceTree = "<group>"; };
+		02A486C41BC112010092616E /* OwnChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OwnChatTableViewCell.xib; sourceTree = "<group>"; };
+		02A486C51BC112010092616E /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		02A486C61BC112010092616E /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		02A486C71BC112010092616E /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		02A486C91BC112010092616E /* ResizableImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizableImageTool.h; sourceTree = "<group>"; };
+		02A486CA1BC112010092616E /* ResizableImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizableImageTool.m; sourceTree = "<group>"; };
+		02A486CC1BC112010092616E /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		02A486CD1BC112010092616E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02A486CE1BC112010092616E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A486D01BC112010092616E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		02A486D11BC112010092616E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		02A486D21BC112010092616E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		02A486D31BC112010092616E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02A486D51BC112010092616E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		02A486D61BC112010092616E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		02A486D71BC112010092616E /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		02A486D81BC112010092616E /* robotIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robotIcon.jpg; sourceTree = "<group>"; };
+		02A486F31BC11F3F0092616E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		02A486F51BC11F460092616E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		02A486F71BC11F4E0092616E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		02A486F91BC11F5B0092616E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		02A486FB1BC11F680092616E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		02A486FD1BC11F700092616E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02A486FF1BC11F7A0092616E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		02A487011BC11F820092616E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		02A487031BC11F8B0092616E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		02A487051BC11F960092616E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02A487071BC11FBD0092616E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02A4870A1BC135150092616E /* VoiceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceButton.h; sourceTree = "<group>"; };
+		02A4870B1BC135150092616E /* VoiceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceButton.m; sourceTree = "<group>"; };
+		02A4870D1BC15C120092616E /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		02A487111BC15E290092616E /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		02A487141BC1658C0092616E /* IATConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IATConfig.h; sourceTree = "<group>"; };
+		02A487151BC1658C0092616E /* IATConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IATConfig.m; sourceTree = "<group>"; };
+		02A487181BC1658C0092616E /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		02A487191BC1658C0092616E /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		0686558F1B8EEA8800EA9E62 /* 小恒机器人.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小恒机器人.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D73D179A5735D081E8AA80C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		442E89FCE4DCDD1883142BEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAED488097C2C4CF03FF29EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0686558C1B8EEA8800EA9E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A4870E1BC15C120092616E /* libz.1.tbd in Frameworks */,
+				02A487081BC11FBD0092616E /* Foundation.framework in Frameworks */,
+				02A487061BC11F960092616E /* CoreGraphics.framework in Frameworks */,
+				02A487041BC11F8B0092616E /* QuartzCore.framework in Frameworks */,
+				02A487021BC11F820092616E /* AddressBook.framework in Frameworks */,
+				02A487001BC11F7A0092616E /* CoreLocation.framework in Frameworks */,
+				02A487121BC15E290092616E /* iflyMSC.framework in Frameworks */,
+				02A486FE1BC11F700092616E /* UIKit.framework in Frameworks */,
+				02A486FC1BC11F680092616E /* AudioToolbox.framework in Frameworks */,
+				02A486FA1BC11F5B0092616E /* CoreTelephony.framework in Frameworks */,
+				02A486F81BC11F4E0092616E /* SystemConfiguration.framework in Frameworks */,
+				02A486F61BC11F460092616E /* AVFoundation.framework in Frameworks */,
+				02A486F41BC11F3F0092616E /* libz.tbd in Frameworks */,
+				B314EDE6D7DFC280F48FF0F2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A486A91BC112010092616E /* MyChat */ = {
+			isa = PBXGroup;
+			children = (
+				02A486B01BC112010092616E /* BaseController */,
+				02A486D41BC112010092616E /* Register */,
+				02A486CF1BC112010092616E /* Login */,
+				02A486B71BC112010092616E /* Chat */,
+				02A486AA1BC112010092616E /* AppDelegate.h */,
+				02A486AB1BC112010092616E /* AppDelegate.m */,
+				02A486AC1BC112010092616E /* LaunchScreen.xib */,
+				02A486AE1BC112010092616E /* Main.storyboard */,
+				02A486CC1BC112010092616E /* icon.jpg */,
+				02A486D81BC112010092616E /* robotIcon.jpg */,
+				02A0CAD21BC368AE00939F3A /* voiceButtonBack.png */,
+				02A486CD1BC112010092616E /* Images.xcassets */,
+				02A486CE1BC112010092616E /* Info.plist */,
+				02A486D31BC112010092616E /* main.m */,
+			);
+			path = MyChat;
+			sourceTree = "<group>";
+		};
+		02A486B01BC112010092616E /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				02A486B11BC112010092616E /* BaseViewController.h */,
+				02A486B21BC112010092616E /* BaseViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		02A486B71BC112010092616E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				02A487131BC165230092616E /* XunFei */,
+				02A487091BC135020092616E /* VoiceButton */,
+				02A486C81BC112010092616E /* ResizableImage */,
+				02A486B81BC112010092616E /* ChatCell */,
+				02A486C51BC112010092616E /* ChatViewController.h */,
+				02A486C61BC112010092616E /* ChatViewController.m */,
+				02A486C71BC112010092616E /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		02A486B81BC112010092616E /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				02A486B91BC112010092616E /* BaseCell */,
+				02A486BC1BC112010092616E /* CellDataType */,
+				02A486BF1BC112010092616E /* OtherChatTableViewCell.h */,
+				02A486C01BC112010092616E /* OtherChatTableViewCell.m */,
+				02A486C11BC112010092616E /* OtherChatTableViewCell.xib */,
+				02A486C21BC112010092616E /* OwnChatTableViewCell.h */,
+				02A486C31BC112010092616E /* OwnChatTableViewCell.m */,
+				02A486C41BC112010092616E /* OwnChatTableViewCell.xib */,
+			);
+			path = ChatCell;
+			sourceTree = "<group>";
+		};
+		02A486B91BC112010092616E /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				02A486BA1BC112010092616E /* BaseChatTableViewCell.h */,
+				02A486BB1BC112010092616E /* BaseChatTableViewCell.m */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		02A486BC1BC112010092616E /* CellDataType */ = {
+			isa = PBXGroup;
+			children = (
+				02A486BD1BC112010092616E /* BaseCellDataType.h */,
+				02A486BE1BC112010092616E /* BaseCellDataType.m */,
+			);
+			path = CellDataType;
+			sourceTree = "<group>";
+		};
+		02A486C81BC112010092616E /* ResizableImage */ = {
+			isa = PBXGroup;
+			children = (
+				02A486C91BC112010092616E /* ResizableImageTool.h */,
+				02A486CA1BC112010092616E /* ResizableImageTool.m */,
+			);
+			path = ResizableImage;
+			sourceTree = "<group>";
+		};
+		02A486CF1BC112010092616E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				02A486D01BC112010092616E /* LoginViewController.h */,
+				02A486D11BC112010092616E /* LoginViewController.m */,
+				02A486D21BC112010092616E /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		02A486D41BC112010092616E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				02A486D51BC112010092616E /* RegisterViewController.h */,
+				02A486D61BC112010092616E /* RegisterViewController.m */,
+				02A486D71BC112010092616E /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		02A487091BC135020092616E /* VoiceButton */ = {
+			isa = PBXGroup;
+			children = (
+				02A4870A1BC135150092616E /* VoiceButton.h */,
+				02A4870B1BC135150092616E /* VoiceButton.m */,
+			);
+			path = VoiceButton;
+			sourceTree = "<group>";
+		};
+		02A487131BC165230092616E /* XunFei */ = {
+			isa = PBXGroup;
+			children = (
+				02A487141BC1658C0092616E /* IATConfig.h */,
+				02A487151BC1658C0092616E /* IATConfig.m */,
+				02A487181BC1658C0092616E /* ISRDataHelper.h */,
+				02A487191BC1658C0092616E /* ISRDataHelper.m */,
+			);
+			path = XunFei;
+			sourceTree = "<group>";
+		};
+		068655861B8EEA8800EA9E62 = {
+			isa = PBXGroup;
+			children = (
+				02A486A91BC112010092616E /* MyChat */,
+				068655901B8EEA8800EA9E62 /* Products */,
+				72B08B9CBF8287B40BACB147 /* Pods */,
+				6E14B9460C290B9F35917C40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		068655901B8EEA8800EA9E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0686558F1B8EEA8800EA9E62 /* 小恒机器人.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E14B9460C290B9F35917C40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02A487111BC15E290092616E /* iflyMSC.framework */,
+				02A4870D1BC15C120092616E /* libz.1.tbd */,
+				02A487071BC11FBD0092616E /* Foundation.framework */,
+				02A487051BC11F960092616E /* CoreGraphics.framework */,
+				02A487031BC11F8B0092616E /* QuartzCore.framework */,
+				02A487011BC11F820092616E /* AddressBook.framework */,
+				02A486FF1BC11F7A0092616E /* CoreLocation.framework */,
+				02A486FD1BC11F700092616E /* UIKit.framework */,
+				02A486FB1BC11F680092616E /* AudioToolbox.framework */,
+				02A486F91BC11F5B0092616E /* CoreTelephony.framework */,
+				02A486F71BC11F4E0092616E /* SystemConfiguration.framework */,
+				02A486F51BC11F460092616E /* AVFoundation.framework */,
+				02A486F31BC11F3F0092616E /* libz.tbd */,
+				442E89FCE4DCDD1883142BEE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72B08B9CBF8287B40BACB147 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D73D179A5735D081E8AA80C /* Pods.debug.xcconfig */,
+				DAED488097C2C4CF03FF29EA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0686558E1B8EEA8800EA9E62 /* 小恒机器人 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068655B21B8EEA8800EA9E62 /* Build configuration list for PBXNativeTarget "小恒机器人" */;
+			buildPhases = (
+				882345D05592694FCF949154 /* Check Pods Manifest.lock */,
+				0686558B1B8EEA8800EA9E62 /* Sources */,
+				0686558C1B8EEA8800EA9E62 /* Frameworks */,
+				0686558D1B8EEA8800EA9E62 /* Resources */,
+				9419B8BBF058F8D3A6393746 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "小恒机器人";
+			productName = IOSBmobDemo;
+			productReference = 0686558F1B8EEA8800EA9E62 /* 小恒机器人.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		068655871B8EEA8800EA9E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = cn.com.hibor;
+				TargetAttributes = {
+					0686558E1B8EEA8800EA9E62 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 83T455DNRU;
+					};
+				};
+			};
+			buildConfigurationList = 0686558A1B8EEA8800EA9E62 /* Build configuration list for PBXProject "小恒机器人" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 068655861B8EEA8800EA9E62;
+			productRefGroup = 068655901B8EEA8800EA9E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0686558E1B8EEA8800EA9E62 /* 小恒机器人 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0686558D1B8EEA8800EA9E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A486EF1BC112010092616E /* RegisterViewController.xib in Resources */,
+				02A0CAD31BC368AE00939F3A /* voiceButtonBack.png in Resources */,
+				02A486EC1BC112010092616E /* LoginViewController.xib in Resources */,
+				02A486E31BC112010092616E /* OwnChatTableViewCell.xib in Resources */,
+				02A486E91BC112010092616E /* Images.xcassets in Resources */,
+				02A486EA1BC112010092616E /* Info.plist in Resources */,
+				02A486E81BC112010092616E /* icon.jpg in Resources */,
+				02A486DA1BC112010092616E /* LaunchScreen.xib in Resources */,
+				02A486F01BC112010092616E /* robotIcon.jpg in Resources */,
+				02A486DB1BC112010092616E /* Main.storyboard in Resources */,
+				02A486E51BC112010092616E /* ChatViewController.xib in Resources */,
+				02A486E11BC112010092616E /* OtherChatTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		882345D05592694FCF949154 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9419B8BBF058F8D3A6393746 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0686558B1B8EEA8800EA9E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A4871A1BC1658C0092616E /* IATConfig.m in Sources */,
+				02A4871C1BC1658C0092616E /* ISRDataHelper.m in Sources */,
+				02A486DE1BC112010092616E /* BaseChatTableViewCell.m in Sources */,
+				02A486E61BC112010092616E /* ResizableImageTool.m in Sources */,
+				02A486D91BC112010092616E /* AppDelegate.m in Sources */,
+				02A4870C1BC135150092616E /* VoiceButton.m in Sources */,
+				02A486EB1BC112010092616E /* LoginViewController.m in Sources */,
+				02A486DC1BC112010092616E /* BaseViewController.m in Sources */,
+				02A486E21BC112010092616E /* OwnChatTableViewCell.m in Sources */,
+				02A486EE1BC112010092616E /* RegisterViewController.m in Sources */,
+				02A486E01BC112010092616E /* OtherChatTableViewCell.m in Sources */,
+				02A486E41BC112010092616E /* ChatViewController.m in Sources */,
+				02A486ED1BC112010092616E /* main.m in Sources */,
+				02A486DF1BC112010092616E /* BaseCellDataType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02A486AC1BC112010092616E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02A486AD1BC112010092616E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		02A486AE1BC112010092616E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02A486AF1BC112010092616E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		068655B01B8EEA8800EA9E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		068655B11B8EEA8800EA9E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		068655B31B8EEA8800EA9E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D73D179A5735D081E8AA80C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../lib",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MyChat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HB.liuhengRobot;
+				PRODUCT_NAME = "小恒机器人";
+			};
+			name = Debug;
+		};
+		068655B41B8EEA8800EA9E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAED488097C2C4CF03FF29EA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../lib",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MyChat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HB.liuhengRobot;
+				PRODUCT_NAME = "小恒机器人";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0686558A1B8EEA8800EA9E62 /* Build configuration list for PBXProject "小恒机器人" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068655B01B8EEA8800EA9E62 /* Debug */,
+				068655B11B8EEA8800EA9E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		068655B21B8EEA8800EA9E62 /* Build configuration list for PBXNativeTarget "小恒机器人" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068655B31B8EEA8800EA9E62 /* Debug */,
+				068655B41B8EEA8800EA9E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 068655871B8EEA8800EA9E62 /* Project object */;
+}
