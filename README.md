@@ -12,4 +12,6 @@
 [图灵机器人](http://www.tuling123.com) 提供智能机器人接口
 
 #程序截图
-
+<img src="https://raw.githubusercontent.com/happyheng/HengRobot/master/screenshot/1.PNG" width = "300" height = "533" alt="截图1" align=center />
+<img src="https://raw.githubusercontent.com/happyheng/HengRobot/master/screenshot/2.PNG" width = "300" height = "533" alt="截图2" align=center />
+<img src="https://raw.githubusercontent.com/happyheng/HengRobot/master/screenshot/3.PNG" width = "300" height = "533" alt="截图3" align=center />
